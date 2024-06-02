@@ -17,6 +17,7 @@ public class BalancedStringFindPosition {
             if (arr[i] == '[' || arr[i] == '{' || arr[i] == '(') {
                 stack.push(i);
             } else if (arr[i] == ']' || arr[i] == '}' || arr[i] == ')') {
+                System.out.println(stack.peek());
                 if (!stack.isEmpty() && stack.peek() == position) {
                     return i;
                 }

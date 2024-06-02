@@ -29,7 +29,7 @@ Notice that the answer must be a substring, "pwke" is a subsequence and not a su
 public class LongestSubstringWithoutRepeatingChar {
 
     public static void main(String[] args) {
-        String str = "cjfwqewadcebneazmkkxynquhmqudwghhlgascavggytkyswidvislcczswfqemaquaizaffgdzsdtqnwlvrzxt";
+        String str = "aabbbaa";
 
         System.out.println(lengthOfLongestSubstring(str));
     }

@@ -53,3 +53,28 @@ public class CommonElementsInArray {
         return false;
     }
 }
+
+
+/*Let's analyze the time and space complexity of the provided program, which finds common elements in multiple arrays.
+
+1. **Time Complexity**:
+   - Let \( n \) be the average size of the arrays and \( m \) be the number of arrays.
+   - Converting the first array into a set (`firstArraySet`) takes \( O(n) \) time.
+   - The nested loops iterate through elements of `firstArraySet` and check if they exist in all other arrays. This involves:
+     - Outer loop iterating through \( O(n) \) elements.
+     - Inner loop iterating through \( O(m-1) \) arrays, each with an average size of \( O(n) \).
+   - The `containsElement` method is called \( O(n) \) times in the worst-case scenario.
+   
+   Therefore, the overall time complexity is approximately:
+   \[
+   O(n) + O(n) \cdot O((m-1) \cdot n) = O(n + m \cdot n^2)
+   \]
+   In practice, if the arrays are of similar sizes and \( m \) is not too large, we can simplify this to \( O(m \cdot n^2) \).
+
+2. **Space Complexity**:
+   - The space complexity primarily depends on the additional data structures used.
+   - `firstArraySet` stores elements from the first array, contributing \( O(n) \) space.
+   - `commonElements` set stores common elements, which could be up to \( O(n) \) in the worst case if all elements are common.
+   - Overall, the space complexity is \( O(n) \) due to the sets used to store elements.
+
+In conclusion, the time complexity of the program is approximately \( O(m \cdot n^2) \) and the space complexity is \( O(n) \), where \( n \) is the average size of the arrays and \( m \) is the number of arrays. Improvements can be made by optimizing the algorithm or using more efficient data structures if dealing with very large arrays or a large number of arrays. */

@@ -7,9 +7,9 @@ public class Reverse2DArray {
 
         print2DArray(arr);
 
-        // reverse2DArray(arr);
+        reverse2DArray(arr);
 
-        reverse2DArrayLastElement(arr);
+        // reverse2DArrayLastElement(arr);
     }
     
     public static void reverse2DArray(int[][] arr) {

@@ -11,6 +11,10 @@ public class HashcodeAndEqueals {public static void main(String[] args) {
 		dk.setName("Pankaj");
 		System.out.println(dk.hashCode());
 
+
+		hm.put(dk, 20);
+		System.out.println(hm);
+
 		Integer value = hm.get(dk);
 
 		System.out.println(value);
