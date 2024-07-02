@@ -18,7 +18,7 @@ public class F24_Parser {
 
     private static int LINE_START_40_COUNTER = 1;
     private static int LINE_START_50_COUNTER = 1;
-    private static int LINE_START_70_COUNTER = 1;
+    // private static int LINE_START_70_COUNTER = 1;
 
     /* Constants of fields Names*/
 
@@ -157,7 +157,7 @@ public class F24_Parser {
                         break;
                     case LINE_START_70:
                         globalMap.put(LINE_START_70, getData_LineStartWith_70(line));
-                        LINE_START_70_COUNTER++;
+                        // LINE_START_70_COUNTER++;
                         break;
                     case LINE_START_EF:
                         globalMap.put(LINE_START_EF, getData_LineStartWith_EF(line));

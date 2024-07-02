@@ -29,5 +29,12 @@ public class Person {
     public void setSkill(String skill) {
         this.skill = skill;
     }
+
+    @Override
+    public String toString() {
+        return "Person [name=" + name + ", skill=" + skill + "]";
+    }
+
+    
     
 }
